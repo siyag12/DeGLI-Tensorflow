@@ -1,0 +1,23 @@
+Source codes for "Deep Griffin-Lim Iteration: Trainable Iterative Phase Reconstruction"
+
+
+This supplemental file contains a TensorFlow implementation of DeGLI described in "Deep Griffin-Lim Iteration: Trainable Iterative Phase Reconstruction."
+A set of Python codes for training and testing are available.
+
+
+Dependencies:
+- Python 3.7.7
+- Numpy 1.18.1
+- SoundFile 0.10.3
+- TensorFlow 1.14.0
+
+
+Usage example:
+The LJ speech dataset (https://keithito.com/LJ-Speech-Dataset/) is required for training.
+
+0. Move to "make_data"
+1. Fix "wav_dir" in "to_pickle_LJspeech.py"
+2. Run "to_pickle_LJspeech.py"
+3. Move to "src"
+4. Run "train.py" to train a model
+5. Run "test.py" to reconstruct signals from amplitude spectrograms
